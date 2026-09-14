@@ -1,0 +1,44 @@
+# EN3160 Assignment 1 — Intensity Transformations and Neighborhood Filtering
+
+**Gunarathna K. T. M. B. — 230203G**
+
+Solutions to all 10 questions of EN3160 Assignment 1 (Ranga Rodrigo): piecewise-linear
+intensity transforms, gray/white-matter accentuation, gamma correction in L\*a\*b\*, vibrance
+enhancement, custom histogram equalization (whole-image and foreground-only), Sobel filtering
+(three implementations), custom image zoom (nearest-neighbor / bilinear), grabCut segmentation
+with background blur, and bilateral filtering (OpenCV vs. Gaussian vs. custom).
+
+## Repo layout
+
+```
+notebook/230203G_a01.ipynb   - the graded deliverable: run top-to-bottom, then
+                                File > Download as > PDF (or `jupyter nbconvert --to pdf`)
+code/                         - the same solutions as standalone, per-question .py scripts
+                                (handy for reading/review outside Jupyter)
+images/                       - input images used by the notebook/scripts
+report/                       - an additional hand-written LaTeX report covering the same
+                                content (NOT a substitute for the notebook-exported PDF —
+                                see note below)
+```
+
+## Running it
+
+```bash
+pip install -r requirements.txt
+jupyter notebook notebook/230203G_a01.ipynb   # run all cells
+jupyter nbconvert --to pdf notebook/230203G_a01.ipynb
+```
+
+## Note on two missing inputs
+
+The original assignment PDF's Fig. 5 (a leaf/dot texture image, for Q5) and the course-provided
+small/large zoom test-image set (for Q8) were not available when this was put together, so both
+questions use clearly-labelled stand-in images (`images/q5_placeholder.jpeg`, and a downsampled
+copy of the Q9 flower photo for Q8) purely to demonstrate the functions end-to-end. Swap in the
+real files under `images/` and re-run — no code changes are needed.
+
+## Important: what to submit
+
+The assignment requires *"a PDF exported directly from your Jupyter Notebook."* That's
+`notebook/230203G_a01.ipynb` exported to PDF — **not** the LaTeX report in `report/`, which
+exists only as a supplementary write-up and does not satisfy that requirement on its own.
