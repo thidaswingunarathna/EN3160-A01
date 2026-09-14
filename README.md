@@ -29,13 +29,6 @@ jupyter notebook notebook/230203G_a01.ipynb   # run all cells
 jupyter nbconvert --to pdf notebook/230203G_a01.ipynb
 ```
 
-## Note on two missing inputs
-
-The original assignment PDF's Fig. 5 (a leaf/dot texture image, for Q5) and the course-provided
-small/large zoom test-image set (for Q8) were not available when this was put together, so both
-questions use clearly-labelled stand-in images (`images/q5_placeholder.jpeg`, and a downsampled
-copy of the Q9 flower photo for Q8) purely to demonstrate the functions end-to-end. Swap in the
-real files under `images/` and re-run — no code changes are needed.
 
 ## Important: what to submit
 
