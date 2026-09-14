@@ -29,9 +29,3 @@ jupyter notebook notebook/230203G_a01.ipynb   # run all cells
 jupyter nbconvert --to pdf notebook/230203G_a01.ipynb
 ```
 
-
-## Important: what to submit
-
-The assignment requires *"a PDF exported directly from your Jupyter Notebook."* That's
-`notebook/230203G_a01.ipynb` exported to PDF — **not** the LaTeX report in `report/`, which
-exists only as a supplementary write-up and does not satisfy that requirement on its own.
